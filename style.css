@@ -1,0 +1,89 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    min-height: 100vh;
+    border-radius: 1rem;
+    border: 3px solid #ccc;
+    padding: 1rem;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 96px;
+  width: 96px;
+  object-fit: cover;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-links a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d7e4dd;
+  border-radius: 0.5rem;
+  background-color: #f5f8f6;
+  color: #285b48;
+  text-decoration: none;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.profile-links a:hover,
+.profile-links a:focus-visible {
+  border-color: #9bbbab;
+  background-color: #e8f1ec;
+}
+
+.profile-links a:focus-visible {
+  outline: 2px solid #285b48;
+  outline-offset: 2px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background-color: #eef4f1;
+  color: #285b48;
+  font-size: 0.875rem;
+}
+
+.skill-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background-color: #d6e7dd;
+  color: #214d3b;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
